@@ -102,9 +102,9 @@ header {
 
 .top-nav {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	position: fixed;
-	top: -100vh;
+	top: -100%;
 	z-index: 50;
 	background-color: #16162d;
 	border-bottom-right-radius: 100%;
@@ -122,7 +122,7 @@ header {
 }
 
 li {
-	margin: 0 2rem;
+	margin: 0 1rem;
 }
 
 .nav-link {
@@ -271,23 +271,12 @@ li {
 	color: #4267b2;
 }
 
-.fa-instagram:hover {
-	background: radial-gradient(
-		circle at 30% 107%,
-		#fdf497 0%,
-		#fdf497 5%,
-		#fd5949 45%,
-		#d6249f 60%,
-		#285aeb 90%
-	);
-	-webkit-background-clip: text;
-	/* Also define standard property for compatibility */
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
+.fa-linkedin:hover {
+	color: #005888;
 }
 
 .fa-github-square:hover {
-	color: #111;
+	color: #4e4e4e;
 }
 
 /* END ABOUT */
@@ -551,124 +540,3 @@ input[type='submit']:hover {
 }
 
 /* END ANIMATION */
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 768px) {
-	body {
-		background: url('imgs/sitebg2.jpg') no-repeat center fixed; /* TODO: Change this*/
-		background-size: cover;
-	}
-
-	.landing-text h1 {
-		font-size: 10rem;
-	}
-
-	.landing-text h6 {
-		font-size: 1.7rem;
-	}
-
-	.nav-list {
-		flex-direction: column;
-	}
-
-	li {
-		margin: 2rem 0;
-	}
-
-	.nav-link {
-		font-size: 4.5rem;
-	}
-
-	.about-heading h1 {
-		font-size: 8rem;
-	}
-
-	.section-heading h1 {
-		font-size: 3rem;
-	}
-
-	.about-details .nav-list {
-		flex-direction: initial;
-	}
-
-	.about-details li {
-		margin: 0 2rem;
-	}
-
-	.icon-container {
-		width: 7rem;
-		height: 7rem;
-	}
-
-	.icon-container i {
-		font-size: 4rem;
-	}
-
-	.timeline ul {
-		margin: 0 0 0 auto;
-	}
-
-	.timeline .date::before {
-		left: -20rem;
-	}
-
-	.timeline .date::after {
-		left: -5.9rem;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.menu-toggler {
-		top: 2rem;
-		right: 2rem;
-	}
-
-	.nav-link {
-		font-size: 3.5rem;
-	}
-
-	.landing-text h1 {
-		font-size: 5rem;
-	}
-
-	.about .container {
-		flex-direction: column;
-	}
-
-	.profile-img {
-		margin: 0 0 7rem 0;
-	}
-
-	.portfolio-item {
-		flex-direction: column;
-	}
-
-	.portfolio-img {
-		margin: 0 0 2rem 0;
-		order: 1;
-	}
-
-	.portfolio-description {
-		margin: 0;
-		order: 2;
-	}
-
-	.timeline p {
-		font-size: 1.6rem;
-	}
-
-	.timeline .date::before {
-		font-size: 1.4rem;
-	}
-
-	form {
-		width: 100%;
-	}
-
-	.up {
-		right: 2rem;
-	}
-}
-
-/* MEDIA QUERIES */
