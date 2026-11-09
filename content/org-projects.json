@@ -1,0 +1,80 @@
+[
+	{
+		"id": 1252768623,
+		"title": "AI sports-marketing analyst",
+		"category": "AI agent",
+		"summary": "A conversational analyst that answers natural-language questions from live sports-fan research data and generates interactive charts on request."
+	},
+	{
+		"id": 1310663196,
+		"title": "Logo detection and media value pipeline",
+		"category": "Computer vision",
+		"summary": "Finds sponsor logos in social images and video with a fine-tuned detection model, scores their media value and produces client-ready reporting."
+	},
+	{
+		"id": 795993591,
+		"title": "Media coverage verification tool",
+		"category": "Internal tool",
+		"summary": "A web tool that processes uploaded media coverage lists and verifies entries through long-running background jobs."
+	},
+	{
+		"id": 879785325,
+		"title": "Social media reporting automation",
+		"category": "Automation",
+		"summary": "Generates social media tracking sheets across platforms, replacing a manual reporting workflow."
+	},
+	{
+		"id": 1271538430,
+		"title": "Data pipeline orchestration platform",
+		"category": "Data platform",
+		"summary": "A containerised workflow orchestrator on a single cloud VM with CI/CD, running scheduled pipelines at a fraction of the cost of the managed alternative."
+	},
+	{
+		"id": 1108481264,
+		"title": "Streaming data ingestion service",
+		"category": "Data pipeline",
+		"summary": "Consumes records from a message stream, cleans them and loads them into the data warehouse."
+	},
+	{
+		"id": 913381509,
+		"title": "Budget estimate calculator",
+		"category": "Internal tool",
+		"summary": "A web app for building project budget estimates and their supporting documents."
+	},
+	{
+		"id": 1209320172,
+		"title": "Sponsorship deal explorer",
+		"category": "Web app",
+		"summary": "A web app for browsing and exploring sponsorship deal data held in spreadsheets."
+	},
+	{
+		"id": 1040765401,
+		"title": "Leave application system",
+		"category": "Internal tool",
+		"summary": "A full-stack internal application for submitting leave requests."
+	},
+	{
+		"id": 833505489,
+		"title": "Client calculator web app",
+		"category": "Web app",
+		"summary": "A multi-page calculator web app built for a commercial client."
+	},
+	{
+		"id": 759570641,
+		"title": "Streaming platform API connector",
+		"category": "Data pipeline",
+		"summary": "Extracts event and advertising data from a sports streaming platform's API and loads it into the data warehouse."
+	},
+	{
+		"id": 914320001,
+		"title": "Social platform data collector",
+		"category": "Data pipeline",
+		"summary": "Collects account-level data through a social platform's API and loads it into the data warehouse."
+	},
+	{
+		"id": 763500291,
+		"title": "Exchange-rate ingestion service",
+		"category": "Data pipeline",
+		"summary": "A containerised cloud service that ingests currency exchange rates for downstream reporting."
+	}
+]

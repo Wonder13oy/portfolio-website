@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Wandile Nxumalo</title>
+		<meta
+			name="description"
+			content="Portfolio of Wandile Nxumalo: data pipelines, AI agents and web applications, kept up to date from GitHub."
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<script type="module" src="app.js"></script>
+	</head>
+	<body>
+		<a class="skip-link" href="#main">Skip to content</a>
+		<header class="site-header">
+			<a class="brand" href="#top" aria-label="Back to top">WN</a>
+			<nav aria-label="Main">
+				<a href="#about">About</a>
+				<a href="#work">Work</a>
+				<a href="#projects">Projects</a>
+				<a href="#archive">Archive</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</header>
+
+		<main id="main">
+			<section class="hero" id="top">
+				<div class="hero-copy">
+					<p class="eyebrow" id="headline"></p>
+					<h1 id="name">Wandile Nxumalo</h1>
+					<p class="lede" id="intro"></p>
+					<dl class="stats" id="stats"></dl>
+				</div>
+				<figure class="activity">
+					<figcaption>
+						<h2 class="chart-title">Commits per year</h2>
+						<ul class="legend" id="legend"></ul>
+					</figcaption>
+					<div class="chart" id="chart"></div>
+					<details class="table-view">
+						<summary>View as table</summary>
+						<div id="chart-table"></div>
+					</details>
+				</figure>
+			</section>
+
+			<p class="load-state" id="load-state" role="status">Loading the latest from GitHub…</p>
+			<noscript><p class="load-state">This site needs JavaScript to show projects.</p></noscript>
+
+			<section id="about" class="section about">
+				<header class="section-head">
+					<p class="eyebrow">About</p>
+					<h2>What I do</h2>
+				</header>
+				<div class="about-body" id="about-body"></div>
+				<div class="skills" id="skills"></div>
+				<div class="about-columns">
+					<div>
+						<h3>Most-used languages</h3>
+						<p class="section-note">By commits across the projects on this site.</p>
+						<ul class="languages" id="languages"></ul>
+					</div>
+					<div>
+						<h3>Journey</h3>
+						<ol class="timeline" id="experience"></ol>
+					</div>
+				</div>
+			</section>
+
+			<section id="work" class="section">
+				<header class="section-head">
+					<p class="eyebrow">Professional work</p>
+					<h2>At Nielsen Sports South Africa</h2>
+					<p class="section-note">
+						These repositories are private, so I only share what each project does and how I was
+						involved. Contribution figures update automatically.
+					</p>
+				</header>
+				<ol class="ledger" id="org-projects"></ol>
+			</section>
+
+			<section id="projects" class="section">
+				<header class="section-head">
+					<p class="eyebrow">Open source</p>
+					<h2>Selected personal projects</h2>
+				</header>
+				<div class="cards" id="featured"></div>
+			</section>
+
+			<section id="archive" class="section">
+				<header class="section-head">
+					<p class="eyebrow">Everything public</p>
+					<h2>Repository archive</h2>
+				</header>
+				<form class="filters" id="filters" role="search">
+					<label>
+						<span>Search</span>
+						<input type="search" id="search" placeholder="Name or description" autocomplete="off" />
+					</label>
+					<label>
+						<span>Language</span>
+						<select id="language"><option value="">All languages</option></select>
+					</label>
+					<label>
+						<span>Sort</span>
+						<select id="sort">
+							<option value="recent">Recently updated</option>
+							<option value="commits">Most commits</option>
+							<option value="name">Name</option>
+						</select>
+					</label>
+				</form>
+				<p class="result-count" id="result-count" role="status"></p>
+				<table class="archive-table">
+					<thead>
+						<tr>
+							<th scope="col">Repository</th>
+							<th scope="col">Language</th>
+							<th scope="col" class="num">Commits</th>
+							<th scope="col">Updated</th>
+						</tr>
+					</thead>
+					<tbody id="archive-rows"></tbody>
+				</table>
+			</section>
+
+			<section id="contact" class="section contact">
+				<p class="eyebrow">Contact</p>
+				<a class="contact-mail" id="email"></a>
+				<ul class="contact-links">
+					<li><a id="linkedin">LinkedIn</a></li>
+					<li><a id="github">GitHub</a></li>
+				</ul>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<span>&copy; <span id="year"></span> Wandile Nxumalo</span>
+			<span id="synced"></span>
+		</footer>
+	</body>
+</html>

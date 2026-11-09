@@ -1,0 +1,13 @@
+{
+	"name": "portfolio-website",
+	"private": true,
+	"type": "module",
+	"engines": {
+		"node": ">=22"
+	},
+	"scripts": {
+		"data": "node scripts/build-data.mjs",
+		"org:list": "node scripts/build-data.mjs --list",
+		"serve": "python3 -m http.server 4321 --directory site"
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"name": "Wandile Nxumalo",
+	"intro": "I build data products and the systems behind them: pipelines, AI agents and the tools people use every day.",
+	"about": [
+		"I work across the stack at Nielsen Sports South Africa, taking projects from raw data to something a client or colleague can use.",
+		"I am driven by the endless possibility to know more, do more and be more in my craft, and I believe in growing young people with skills that can change their futures."
+	],
+	"skills": [
+		{
+			"title": "Data engineering",
+			"body": "Ingestion from APIs and streams, warehouse modelling in SQL and BigQuery, and scheduled pipelines on Airflow."
+		},
+		{
+			"title": "AI and machine learning",
+			"body": "Conversational agents over live data, computer vision, and supervised models from a CRISP-DM foundation."
+		},
+		{
+			"title": "Full-stack development",
+			"body": "Web apps and internal tools in TypeScript, React and Python, containerised and deployed to the cloud."
+		},
+		{
+			"title": "Data analysis",
+			"body": "Wrangling, exploring and visualising data with Pandas, NumPy and Matplotlib to surface insights and trends."
+		}
+	],
+	"experience": [
+		{
+			"linkedinCompany": "Nielsen",
+			"place": "Nielsen Sports South Africa",
+			"body": "Building the data pipelines, AI products and internal tools behind sports-marketing research."
+		},
+		{
+			"linkedinCompany": "Umuzi.org",
+			"place": "Umuzi",
+			"body": "Worked in a small team on the academy's auto-mark project, an automation tool that marks recruits' code."
+		},
+		{
+			"linkedinCompany": "VZAP",
+			"place": "Van Zyl and Pritchard (VZAP)",
+			"body": "Learnt Java and was introduced to back-end programming."
+		},
+		{
+			"place": "Basa Tutorial Institute",
+			"body": "Matriculated and found a passion for programming through Computer Applications Technology."
+		}
+	],
+	"links": {
+		"email": "wandilenxumalo131@gmail.com",
+		"linkedin": "https://www.linkedin.com/in/wandile-nxumalo/",
+		"github": "https://github.com/Wonder13oy"
+	}
+}
