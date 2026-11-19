@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wandile Nxumalo CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  @page { size: A4; margin: 0; }
+  :root {
+    --ink: #16171b;
+    --soft: #42454f;
+    --faint: #63666f;
+    --accent: #2f43d6;
+    --rule: #c9cef2;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 210mm; height: 297mm; }
+  body {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 9pt;
+    line-height: 1.38;
+    color: var(--ink);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  a { color: inherit; text-decoration: none; }
+  .page { height: 297mm; overflow: hidden; padding: 11mm 17mm 9mm; }
+
+  header { text-align: left; }
+  h1 { font-size: 24pt; font-weight: 700; letter-spacing: -0.02em; line-height: 1.05; }
+  .title { margin-top: 1.4mm; font-size: 11.5pt; font-weight: 600; color: var(--accent); }
+  .contact { margin-top: 2.4mm; font-size: 8.4pt; color: var(--soft); line-height: 1.6; }
+  .contact .label { display: inline-block; width: 18mm; font-size: 7.4pt; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+  .contact .sep { color: var(--rule); margin: 0 0.9mm; }
+  .contact a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-decoration-thickness: 0.2mm;
+    text-underline-offset: 0.7mm;
+    white-space: nowrap;
+  }
+  .contact a.external::after { content: '\2197'; font-size: 7pt; margin-left: 0.5mm; color: var(--accent); opacity: 0.75; display: inline-block; text-decoration: none; }
+
+  section { margin-top: 4.2mm; }
+  h2 {
+    font-size: 9.6pt; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--accent); padding-bottom: 1mm; margin-bottom: 2.2mm; border-bottom: 0.35mm solid var(--rule);
+  }
+  .summary { color: var(--soft); }
+
+  .job { margin-bottom: 3mm; }
+  .job:last-child { margin-bottom: 0; }
+  .line { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+  .company { font-size: 10.4pt; font-weight: 700; }
+  .dates { font-size: 8.7pt; color: var(--faint); white-space: nowrap; }
+  .role { font-weight: 600; color: var(--ink); }
+  .role-line { margin-top: 0.6mm; }
+  .job ul { margin-top: 1.2mm; padding-left: 4.2mm; }
+  .job li { margin-bottom: 0.7mm; color: var(--soft); padding-left: 0.6mm; }
+  .job li::marker { color: var(--accent); }
+  .note { margin-top: 0.8mm; color: var(--soft); }
+
+  .skills p { margin-bottom: 1mm; color: var(--soft); }
+  .skills strong { color: var(--ink); font-weight: 600; }
+
+  .entries p { display: flex; justify-content: space-between; gap: 4mm; margin-bottom: 1mm; }
+  .entries .what { color: var(--soft); }
+  .entries strong { color: var(--ink); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>Wandile Nxumalo</h1>
+    <p class="title">Lead Data Scientist and Engineer</p>
+    <div class="contact">
+      <p><span class="label">Contact</span>South Africa <span class="sep">|</span> <a href="mailto:wandilenxumalo131@gmail.com">wandilenxumalo131@gmail.com</a></p>
+      <p><span class="label">Online</span><a class="external" href="https://www.linkedin.com/in/wandile-nxumalo/">linkedin.com/in/wandile-nxumalo</a> <span class="sep">|</span> <a class="external" href="https://github.com/Wonder13oy">github.com/Wonder13oy</a> <span class="sep">|</span> <a class="external" href="https://wonder13oy.github.io/portfolio-website/">wonder13oy.github.io/portfolio-website</a></p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional summary</h2>
+    <p class="summary">Seven years across software, data engineering and data science. I build AI products, data pipelines and internal tools on Google Cloud, and take them from raw data to production. I care as much about a system holding up as about the model inside it.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="line"><span class="company">Nielsen Sports South Africa</span><span class="dates">Jan 2023 – Present</span></div>
+      <p class="role-line"><span class="role">Lead Data Scientist and Engineer</span></p>
+      <ul>
+        <li>Built and run SIYA, an AI analyst that answers plain-English questions from live BigQuery fan-research data and draws charts on request.</li>
+        <li>Extended SIYA across several research studies with governed metrics, client sign-in, tiered usage metering, voice, and an API for other AI agents.</li>
+        <li>Built a logo detection pipeline in which a fine-tuned YOLO model finds sponsor logos in social images and video and scores their media value.</li>
+        <li>Replaced managed Cloud Composer with a self-hosted Apache Airflow deployment on Compute Engine with GitHub Actions CI/CD, cutting orchestration costs.</li>
+        <li>Built BigQuery pipelines from Kafka, video analytics, streaming, social and exchange-rate APIs, and shipped internal web tools on Cloud Run.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="line"><span class="company">Telesure Investment Holdings (TIH)</span><span class="dates">Jun 2020 – Dec 2022</span></div>
+      <p class="note">Four roles in two and a half years across data architecture, business intelligence and data science.</p>
+      <ul>
+        <li><div class="line"><span class="role">Junior Data Scientist</span><span class="dates">Jun 2021 – Dec 2022</span></div></li>
+        <li><div class="line"><span class="role">Data Science Intern</span><span class="dates">Mar 2021 – May 2021</span></div></li>
+        <li><div class="line"><span class="role">Business Intelligence Intern</span><span class="dates">Sep 2020 – Feb 2021</span></div></li>
+        <li><div class="line"><span class="role">Data Architect Intern</span><span class="dates">Jun 2020 – Aug 2020</span></div></li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="line"><span class="company">Umuzi</span><span class="dates">Mar 2019 – May 2020</span></div>
+      <ul>
+        <li><div class="line"><span class="role">Junior Facilitator</span><span class="dates">Mar 2020 – May 2020</span></div>Facilitated learning in Umuzi's technology programme.</li>
+        <li><div class="line"><span class="role">Web Developer</span><span class="dates">Mar 2019 – Sep 2019</span></div>Built an auto-mark tool in a small team that grades recruits' code.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <p><strong>Languages:</strong> Python, SQL, TypeScript, JavaScript, Java (Python and Java verified by LinkedIn skill assessments)</p>
+    <p><strong>Data:</strong> BigQuery, Apache Airflow, Kafka, Pandas, NumPy, SAS</p>
+    <p><strong>AI and ML:</strong> LLM agents, Vertex AI, Model Context Protocol, YOLO, supervised learning</p>
+    <p><strong>Cloud and DevOps:</strong> Google Cloud (Cloud Run, Compute Engine, Cloud Workflows), Docker, GitHub Actions</p>
+    <p><strong>Web:</strong> React, Next.js, Streamlit, Flask</p>
+  </section>
+
+  <section class="entries">
+    <h2>Education</h2>
+    <p><span><strong>National Certificate in IT: Software Development</strong><span class="what"> (SAQA 48872), Umuzi Academy</span></span><span class="dates">2019 – 2020</span></p>
+    <p><span><strong>Java development bootcamp</strong><span class="what">, Van Zyl and Pritchard (VZAP)</span></span><span class="dates">Sep 2018 – Dec 2018</span></p>
+    <p><span><strong>National Senior Certificate (matric)</strong><span class="what">, Basa Tutorial Institute</span></span></p>
+  </section>
+
+  <section class="entries">
+    <h2>Certifications</h2>
+    <p><span><strong>Google Ad Manager, three courses</strong><span class="what">, Google Skillshop</span></span><span class="dates">2026</span></p>
+    <p><span><strong>Machine learning and project management, three courses</strong><span class="what">, LinkedIn Learning</span></span><span class="dates">2022</span></p>
+    <p><span><strong>SAS 9.4 Cert Prep, Parts 9 to 12</strong><span class="what">, LinkedIn Learning</span></span><span class="dates">2021</span></p>
+  </section>
+</div>
+</body>
+</html>

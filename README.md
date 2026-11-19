@@ -19,6 +19,7 @@ The generated JSON, the source of this repo and the Actions logs are all public.
 | Banner title, journey roles and dates | `content/Positions.csv` (see below) |
 | Featured or hidden personal repos | `content/personal.json` |
 | Published org projects | `content/org-projects.json` |
+| Downloadable CV | Edit `cv/cv.html`, print it to PDF (A4, no margins), save it as `site/assets/Wandile_Nxumalo_CV.pdf` |
 
 Role labels are derived from commit share. To override one, add `"role": "..."` to its entry in `content/org-projects.json`.
 
